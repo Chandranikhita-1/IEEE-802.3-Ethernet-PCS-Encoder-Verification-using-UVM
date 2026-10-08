@@ -1,0 +1,39 @@
+<session version="1.1" release="U-2023.03-SP2-8" timestp="2026-05-12 04:02:40 GMT">
+  <info>
+    <attr name="datetime" value="Mon May 11 21:02:40 2026
+"/>
+    <attr name="command" value="urg -lca -metric group+line+cond+fsm -dir simv.vdb"/>
+    <attr name="top_instance" value="tb_top"/>
+  </info>
+  <hvp>
+    <datadef>
+      <metdef name="Line" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Cond" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="FSM" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Line" value="657/668" />
+    <metric name="Cond" value="736/738" />
+    <metric name="FSM" value="13/15" />
+    <metric name="Group" value="98.9583%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="pcs_pkg::pcs_coverage::cg_input">
+      <metric name="Group" value="96.875%" />
+    </scope>
+    <scope type="group" name="pcs_pkg::pcs_coverage::cg_fsm">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="pcs_pkg::pcs_coverage::cg_output">
+      <metric name="Group" value="100%" />
+    </scope>
+  </scope>
+  <scope type="assert" name="Statistics">
+  </scope>
+  </old_coverage>
+</session>
